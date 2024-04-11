@@ -1,0 +1,19 @@
+/*
+ * app.css
+ * archives
+ * 
+ * Created by Ian Thompson on April 10th 2024
+ * ianthompson@nicelion.com
+ * https://www.nicelion.com
+ * 
+ * Copyright (c) 2024 Nice Lion Technologies LLC. All Rights Reserved.
+ * 
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header {
+    background:url('/hero.jpeg');
+}
