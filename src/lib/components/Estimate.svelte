@@ -98,23 +98,23 @@
                 <form class="p-6 flex flex-col justify-center">
                     <div class="flex flex-col space-y-3">
                         <div class="w-full flex flex-col">
-                            <label for="name" class="">Number of Items</label>
+                            <label for="items" class="">Number of Items</label>
                             <input type="number" name="name" id="name" placeholder="ex: 350" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none" bind:value={numberOfPhotos}>
                         </div>
                         <div class="w-full flex flex-col">
-                            <label for="name" class="">Number Photos Recolored</label>
+                            <label for="recolor" class="">Number Photos Recolored</label>
                             <input type="number" name="name" id="name" placeholder="ex: 350" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none" bind:value={numberOfRecolor}>
                         </div>
                         <div class="w-full flex flex-col">
-                            <label for="name" class="">Number Photos Restored</label>
+                            <label for="restore" class="">Number Photos Restored</label>
                             <input type="number" name="name" id="name" placeholder="ex: 350" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none" bind:value={numberOfRestore}>
                         </div>
                         <div class="w-full flex flex-col">
-                            <label for="name" class="">Return Photos on USB Stick</label>
+                            <label for="usb" class="">Return Photos on USB Stick</label>
                             <input type="number" name="name" id="name" placeholder="ex: 350" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none" bind:value={numberOfUSB}>
                         </div>
                         <div class="w-full flex flex-col">
-                            <label for="name" class="">Return Photos on Hard Drive</label>
+                            <label for="hdd" class="">Return Photos on Hard Drive</label>
                             <input type="number" name="name" id="name" placeholder="ex: 350" class="w-100 mt-2 py-3 px-3 rounded-lg bg-white  border border-gray-400  text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none" bind:value={numberOfHDD}>
                         </div>
                     </div>
