@@ -12,11 +12,11 @@
 
 <script lang="ts">
 
-    let numberOfPhotos = 0
-    let numberOfRecolor = 0
-    let numberOfRestore = 0
-    let numberOfUSB = 0
-    let numberOfHDD = 0
+    let numberOfPhotos = ""
+    let numberOfRecolor = ""
+    let numberOfRestore = ""
+    let numberOfUSB = ""
+    let numberOfHDD = ""
 
     let pricingBasic = 0.4
     let tier2 = 0.35
@@ -61,8 +61,8 @@
                     <p class="text-normal text-lg sm:text-2xl font-medium text-gray-600 mt-2">
                         Fill in the form to start a conversation
                     </p>
-                    <h3 class="text-6xl text-gray-800 font-extrabold tracking-tight mt-8 text-center w-full">
-                        <sup class="text-green-400 text-md">$</sup>{estimatedPrice}
+                    <h3 class="text-6xl text-gray-800 font-extrabold tracking-tight mt-8 text-center w-full max-w-full overflow-clip">
+                       {estimatedPrice}
                     </h3>
                     <p class="mt-5 italic text-gray-600">*This is an estimate and should not be considered as a final bill.</p>
                     <!-- <div class="flex items-center mt-8 text-gray-600 ">

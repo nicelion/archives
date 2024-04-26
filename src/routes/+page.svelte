@@ -14,6 +14,7 @@
 
 <svelte:head>
     <title>Digitize Your Memories | Nice Lion Technologies Physical Media Archiving</title>
+    <meta name="description" content="At Nice Lion Technologies, we believe that every photo is a treasure worth preserving. Our photo digitization services are designed to breathe new life into your old photos, ensuring that your memories are not only preserved but also easily accessible and shareable for generations to come.">
 </svelte:head>
 
 
@@ -34,10 +35,10 @@
                 <span class="text-white">Preserve Your Past.</span> Digitalize Your Memories.
             </h1>
             <h2 class="text-gray-200  text-3xl leading-tight">
-                    Expert Photo Digitaliztion Services here in South Carolina.
+                    Expert Media Digitaliztion Services Here in South Carolina.
             </h2>
             <div class="inline-flex">
-                <a href="#about"><button class="p-2 my-5 mx-2 bg-transparent border-2 bg-indigo-500  border-indigo-500 rounded hover:border-indigo-800 font-bold text-white shadow-md transition duration-500 md:text-lg">Learn More</button></a>
+                <a href="#about"><button class="p-2 my-5 mx-2 bg-transparent border-2 bg-gray-500  border-gray-500 rounded  font-bold text-white shadow-md transition duration-500 md:text-lg">Learn More</button></a>
             </div>
     </div>
     
@@ -77,6 +78,7 @@
                 <Points title="Sharing and Storytelling" description="Digitized photos can be shared with family and friends, helping to keep your stories and family history alive for future generations." />
                 <Points title="Space Saving" description="Digitizing photos reduces the need for physical storage space, freeing up room in your home while preserving your memories." />
                 <Points title="Restoration" description="Old or damaged photos can be digitally restored, bringing back clarity and color that may have faded over time." />
+                <Points title="Compliance" description="We also digitize old business related documents needed to be kept for compliancee purposes." />
             </div>
           </div>
           <div class="md:5/12 lg:w-5/12">
@@ -151,7 +153,7 @@
           </p>
   
           <a
-            class="mt-4 block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
+            class="mt-4 block rounded border border-gray-600 bg-gray-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-gray-600 focus:outline-none focus:ring active:text-gray-500 sm:mt-6"
             href="https://forms.gle/U311BKuTMrwkBYoD9" target="_blank"
           >
             Get Started
@@ -271,7 +273,7 @@
           </p>
   
           <a
-            class="mt-4 block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
+            class="mt-4 block rounded border border-gray-600 bg-gray-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-gray-600 focus:outline-none focus:ring active:text-gray-500 sm:mt-6"
             href="https://forms.gle/U311BKuTMrwkBYoD9" target="_blank"          >
             Get Started
           </a>
@@ -390,7 +392,7 @@
           </p>
   
           <a
-            class="mt-4 block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 sm:mt-6"
+            class="mt-4 block rounded border border-gray-600 bg-gray-600 px-12 py-3 text-center text-sm font-medium text-white hover:bg-transparent hover:text-gray-600 focus:outline-none focus:ring active:text-gray-500 sm:mt-6"
             href="https://forms.gle/U311BKuTMrwkBYoD9" target="_blank"          >
             Get Started
           </a>
@@ -502,6 +504,9 @@
             Image repair services are billed at $30.00 per photo.
         </p>
         <p>
+          Both repair and recoloring services may differ in actual cost. We will confirm with you before these services are completed.
+        </p>
+        <p>
             Digitzed files will be avalible for download for free. However, this link will only be avalible for a minimum of one month. USB Drives of External Hard Drives are availible for purchase at a rate of $10.00 and $60.00, respectivly. You are able to send in your own drives and we will happily upload your media to these drives at no cost.
         </p>
         <p>
@@ -580,9 +585,9 @@
 
 </section>
 
-<section id="faq">
+<section id="faq" class="w-full flex flex-col">
   <Faq />
+  <a class="btn btn-active btn-neutral mx-auto" href="/faqs">View More</a>
   <!-- <p>View More</p> -->
 </section>
 <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfVlGKFQcAl9DsonsH50p6FybhtdN7mzkaIn94xnCVuxy2JUQ/viewform?embedded=true" onload={'javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'} style="height:200px;width:100%;border:none;overflow:hidden;"frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-

@@ -11,17 +11,49 @@
 --->
 
 <script>
-    import "../app.css";
+	import { onMount } from "svelte";
+  
+  import "../app.css";
+	import { page } from "$app/stores";
+
+
+	var pageYOffset = 0;
+
+  const pageScroll = () => {
+    var nav = document.getElementById("nav")
+		var content = document.getElementById('content');
+
+    if ($page.url.pathname == "/") {
+      console.log(pageYOffset, content?.offsetTop);
+			if (pageYOffset > 20) {
+        nav?.classList.add("bg-black")
+        nav?.classList.remove("bg-transparent")
+
+      } else {
+        nav?.classList.add("bg-transparent")
+        nav?.classList.remove("bg-black")
+
+      }
+    }
+  }
+
+  onMount(() => {
+
+  })
+
+
 </script>
 
-<nav id="nav" class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white bg-transparent">
+<svelte:window on:scroll={pageScroll} bind:scrollY={pageYOffset} />
+
+<nav id="nav" class="fixed inset-x-0 top-0 flex flex-row justify-between z-10 text-white items-center bg-black">
 
     <div class="p-4">
         <!-- <div class="font-extrabold tracking-widest text-xl"><a href="#" class="transition duration-500 hover:text-indigo-500">NICE LION</a></div> -->
         <a href="#" id='logo' class='text-white flex space-x-4 items-center font-logo'>
             <img src="/logo.png" alt="" class="h-10 md:h-14">
             <div class="">
-                <h1 class="font-bold text-xl">Nice Lion Technologies</h1>
+                <h1 class="font-bold text-lg lg:text-xl">Nice Lion Technologies</h1>
                 <p class="text-center border-t-[1px] pt-1 text-sm">Physical Media Archiving</p>
             </div>
         </a>
@@ -46,17 +78,19 @@
     </div>
 </nav>
 
-<slot />
+<div id="content">
+  <slot />
+</div>
 
 <footer class="bg-white">
     <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
       <div
-        class="flex flex-col items-center gap-4 rounded-lg bg-indigo-600 p-6 shadow-lg sm:flex-row sm:justify-between"
+        class="flex flex-col items-center gap-4 rounded-lg bg-gray-600 p-6 shadow-lg sm:flex-row sm:justify-between"
       >
         <strong class="text-xl text-white sm:text-xl"> Let's get to work! </strong>
   
         <a
-          class="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-indigo-600 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
+          class="inline-flex items-center gap-2 rounded-full border border-white bg-white px-8 py-3 text-gray-600 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:bg-white/90"
           href="https://forms.gle/U311BKuTMrwkBYoD9" target="_blank"        >
           <span class="text-sm font-medium"> Fill Out Inquiry Form </span>
   
@@ -291,9 +325,15 @@
             </a>
           </div>
   
-          <p class="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-right">
-            Copyright &copy; 2024. <a href="https://www.nicelion.com" class="hover:underline">Nice Lion Technologies</a>. All rights reserved.
-          </p>
+          <div class="flex flex-col items-center justify-center">
+            <p class="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-right">
+              Copyright &copy; 2024. <a href="https://www.nicelion.com" class="hover:underline">Nice Lion Technologies</a>. All rights reserved.
+            </p>
+            <p class="mt-4 text-center text-sm text-gray-500 sm:mt-0 sm:text-right">
+              Located in Greenville, South Carolina.
+            </p>
+          </div>
+
         </div>
       </div>
     </div>
